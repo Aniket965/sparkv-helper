@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:ATmega16-8",
+    "port": "/dev/ttyACM0",
+    "sketch": "hello/hello.ino"
+}
