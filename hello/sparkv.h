@@ -24,3 +24,6 @@ void buzzerOff(void) {
     PORTC = port_restore;
 }
 
+
+void motionPinConfig(void) {
+}

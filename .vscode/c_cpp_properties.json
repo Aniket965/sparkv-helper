@@ -5,7 +5,8 @@
             "includePath": [
                 "/home/animoji/Downloads/arduino-1.8.5/tools/**",
                 "/home/animoji/Downloads/arduino-1.8.5/hardware/arduino/avr/**",
-                "${workspaceFolder}/**",
+                "/home/animoji/Downloads/arduino-1.8.5/hardware/tools/avr/avr/include",
+                "${workspaceFolder}/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
