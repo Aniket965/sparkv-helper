@@ -9,6 +9,8 @@ class Sparkvbot {
     void motionPinInit();
     void motionForward(void);
     void motionBackward(void);
+    void motionSoftBreak(void);
+    void motionHardBreak(void);
   private:
     void motionSet(unsigned char);
 };

@@ -3,6 +3,9 @@
 
 #define FORWARD_DIRECTION 0x06
 #define BACKWARD_DIRECTION 0x09
+#define HARDBREAK_DIRECTION 0x00
+#define SOFTBREAK_DIRECTION 0x0F
+
 
 void Sparkvbot::buzzerPinInit()  {
     DDRC = DDRC | 0x08;
@@ -42,4 +45,10 @@ void Sparkvbot::motionForward(void) {
 }
 void Sparkvbot::motionBackward(void) {
     motionSet(BACKWARD_DIRECTION);
+}
+void Sparkvbot::motionHardBreak(void) {
+    motionSet(HARDBREAK_DIRECTION);
+}
+void Sparkvbot::motionSoftBreak(void) {
+    motionSet(SOFTBREAK_DIRECTION);
 }
