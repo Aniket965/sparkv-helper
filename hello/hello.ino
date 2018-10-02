@@ -1,19 +1,19 @@
 #include <avr/io.h> 
 #include <avr/interrupt.h>
 #include <util/delay.h>
-#include "sparkv.h"
+#include "Sparkv.h"
+
+
 int main(void) {
     cli();
-    buzzerPortInit();
+    Sparkvbot bot = Sparkvbot();
+    bot.buzzerPinConfig();
     sei();
-  
+ 
+
     _delay_ms(1000);
-    buzzerOn();
+    bot.buzzerOn();
     _delay_ms(1000);
-    buzzerOff();
-       _delay_ms(1000);
-    buzzerOn();
-    _delay_ms(1000);
-    buzzerOff();
-    
+    bot.buzzerOff();
+       
 }
