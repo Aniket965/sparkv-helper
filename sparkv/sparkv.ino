@@ -7,7 +7,7 @@
 int main(void) {
     cli();
     Sparkvbot bot = Sparkvbot();
-    bot.buzzerPinConfig();
+    bot.buzzerPinInit();
     sei();
  
 
