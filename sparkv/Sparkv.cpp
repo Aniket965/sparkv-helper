@@ -5,6 +5,12 @@
 #define BACKWARD_DIRECTION 0x09
 #define HARDBREAK_DIRECTION 0x00
 #define SOFTBREAK_DIRECTION 0x0F
+#define MOTION_LEFT_DIRECTION 0x05
+#define MOTION_RIGHT_DIRECTION 0x0A
+#define MOTION_SOFT_LEFT_DIRECTION 0x04
+#define MOTION_SOFT_RIGHT_DIRECTION 0x02
+#define MOTION_SOFT_LEFT_V2_DIRECTION 0x01
+#define MOTION_SOFT_RIGHT_V2_DIRECTION 0x08
 
 
 void Sparkvbot::buzzerPinInit()  {
@@ -51,4 +57,22 @@ void Sparkvbot::motionHardBreak(void) {
 }
 void Sparkvbot::motionSoftBreak(void) {
     motionSet(SOFTBREAK_DIRECTION);
+}
+void Sparkvbot::motionRight(void) {
+    motionSet(MOTION_RIGHT_DIRECTION);
+}
+void Sparkvbot::motionLeft(void) {
+    motionSet(MOTION_LEFT_DIRECTION);
+}
+void Sparkvbot::motionSoftLeft(void) {
+    motionSet(MOTION_SOFT_LEFT_DIRECTION);
+}
+void Sparkvbot::motionSoftRight(void){
+    motionSet(MOTION_SOFT_RIGHT_DIRECTION);
+}
+void Sparkvbot::motionSoftLeftV2(void) {
+    motionSet(MOTION_SOFT_LEFT_V2_DIRECTION);
+}
+void Sparkvbot::motionSoftRightV2(void) {
+    motionSet(MOTION_SOFT_RIGHT_V2_DIRECTION);
 }

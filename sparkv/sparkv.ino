@@ -20,5 +20,9 @@ int main(void) {
     bot.motionForward();
     _delay_ms(500);
     bot.motionHardBreak();
+_delay_ms(500);
+bot.motionLeft();
+_delay_ms(500);
+  bot.motionHardBreak();
 
 }
